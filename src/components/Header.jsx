@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logo from "../assets/logo.png"; // Adjust the path as necessary
 import { Menu, X } from 'lucide-react';
 
-export const Header = () => {
+export const HeaderCom = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const toggleMobileMenu = () => {

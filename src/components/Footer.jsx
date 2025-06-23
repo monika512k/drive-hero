@@ -1,6 +1,6 @@
 import footer1 from "../assets/footer-mobile.png";
 import footer2 from "../assets/footer-desktop.png";
-export const Footer = async()=>{
+export const FooterCom = async()=>{
     return (
  <footer className=" text-white">
         <img src={footer1} className='block md:hidden w-full'/>
