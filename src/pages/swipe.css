@@ -1,0 +1,113 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swipecard {
+  /* width: 440px; */
+  height: 340px;
+}
+
+/* Remove all background colors from swiper slides to let the card component show */
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  /* Remove all background colors */
+  background: transparent !important;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent !important; /* Ensure no background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Position pagination dots on the right side for vertical slider */
+.mySwiper .swiper-pagination {
+  right: 10px !important;
+  left: auto !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: auto !important;
+  height: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+/* Style the pagination bullets */
+.mySwiper .swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  margin: 6px 0 !important;
+  background: #ccc !important;
+  opacity: 1 !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background: #007aff !important;
+  transform: scale(1.2) !important;
+}
+
+/* Enhance the card effect */
+.mySwiper.swiper-cards .swiper-slide {
+  background: transparent !important;
+}
+
+/* Remove all shadows from the card effect */
+.mySwiper .swiper-slide-shadow,
+.mySwiper .swiper-slide-shadow-left,
+.mySwiper .swiper-slide-shadow-right,
+.mySwiper .swiper-slide-shadow-top,
+.mySwiper .swiper-slide-shadow-bottom {
+  display: none !important;
+}
+
+.mySwiper .swiper-slide::after,
+.mySwiper .swiper-slide::before {
+  display: none !important;
+}
+
+/* Optional: Add some spacing around the swiper container */
+.mySwiper {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
